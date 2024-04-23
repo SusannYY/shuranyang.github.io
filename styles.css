@@ -44,3 +44,36 @@ footer p a {
 footer p a:hover {
     text-decoration: underline;
 }
+
+section#projects {
+    padding: 20px;
+}
+
+.project {
+    background: #222; /* Slightly lighter than body background for contrast */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.project h3 {
+    color: #ddd;
+}
+
+.project p {
+    color: #ccc; /* Light gray text */
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px;
+    background: #4a86e8;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project a:hover {
+    background: #357abd;
+}
