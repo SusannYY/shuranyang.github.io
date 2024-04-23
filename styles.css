@@ -51,18 +51,37 @@ button:hover, .button:hover {
 
 /* Style for the project cards */
 .project {
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px; /* adds space between cards */
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    margin-bottom: 20px; /* Adds space between project entries */
 }
 
-/* Improving the layout with grid or flex */
-#projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
-    grid-gap: 20px; /* Adds space between the grid items */
+.project-image {
+    flex-basis: 40%; /* Adjust the percentage based on your preference */
+    padding-right: 20px; /* Adds space between the image and the text */
 }
+
+.project-description {
+    flex-basis: 60%; /* The rest of the space will be taken up by the description */
+}
+
+.project img {
+    width: 100%; /* Makes the image responsive to the size of .project-image */
+    border-radius: 5px; /* Optional: Adds rounded corners to the image */
+}
+
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    
+    .project-image,
+    .project-description {
+        flex-basis: auto; /* Resets the width for mobile view */
+    }
+}
+
 
 /* Style for contact information */
 #contact {
