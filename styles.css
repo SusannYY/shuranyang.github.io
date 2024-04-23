@@ -51,8 +51,6 @@ button:hover, .button:hover {
 
 /* Style for the project cards */
 .project {
-    flex-basis: 48%; /* Each item will take up roughly half the container's width */
-    margin-bottom: 20px; /* Adds space between rows of projects */
     background: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
@@ -61,9 +59,9 @@ button:hover, .button:hover {
 
 /* Improving the layout with grid or flex */
 #projects {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
-    justify-content: space-between; /* Distributes space between and around items */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    grid-gap: 20px; /* Adds space between the grid items */
 }
 
 /* Style for contact information */
