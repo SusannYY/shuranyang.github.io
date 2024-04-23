@@ -1,4 +1,87 @@
 /* Basic reset */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Apply the font to the body, which will inherit in all child elements */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6; /* improves readability */
+}
+
+/* Style for main titles */
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: disc; /* default bullet style */
+    margin-left: 20px; /* adds indentation to the list */
+    color: #ccc; /* color for the text */
+}
+
+ul li {
+    margin-bottom: 5px; /* adds space between bullet points */
+}
+
+/* Style for subtitles */
+p {
+    color: #bbbbbb; /* Light grey for less emphasis */
+    font-size: 1em;
+}
+
+/* Style for the buttons */
+button, .button {
+    background-color: #0b5ed7; /* Example accent color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover, .button:hover {
+    background-color: #0a53be; /* Darken the button color on hover */
+}
+
+/* Style for the project cards */
+.project {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* adds space between cards */
+}
+
+/* Improving the layout with grid or flex */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px; /* adds space between cards */
+}
+
+/* Style for contact information */
+#contact {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact a {
+    color: #4a86e8;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+
 body, h1, h2, p {
     margin: 0;
     padding: 0;
